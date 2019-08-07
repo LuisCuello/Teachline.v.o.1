@@ -1,0 +1,970 @@
+{
+	"info": {
+		"_postman_id": "5917f71a-70f8-45ed-b706-0ecedd002ed7",
+		"name": "Teachline",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post agregar usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"usuario\":{\n\t\t\"usuario\":\"Jank10\",\n\t\t\"contrasena\":\"carlos\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/usuarios",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todos los usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/usuarios",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get usuario por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/usuarios/5d4663d41c9d44000055361b",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"usuarios",
+						"5d4663d41c9d44000055361b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete usuario ",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/usuarios/5d48c7081efc0618454b45aa",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"usuarios",
+						"5d48c7081efc0618454b45aa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put actualizar usuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\t\"usuario\":\"jesu\",\n\t\t\"contrasena\":\"0976\"\n\t\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/usuarios/5d499da12e918504cf34be68",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"usuarios",
+						"5d499da12e918504cf34be68"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post agregar registro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"registro\":{\r\n    \t\"nombre1\": \"Jan\",\r\n    \t\"nombre2\": \"Carlos\",\r\n    \t\"apellido1\": \"Perez\",\r\n    \t\"apellido2\": \"Perez\",\r\n    \t\"identificacion\": \"1o67704893\",\r\n    \t\"fnacimiento\": \"1997\",\r\n    \t\"correo\": \"jank10@gmail.com\",\r\n    \t\"genero\": \"masculino\",\r\n    \t\"usuario\": \"Jank10\",\r\n    \t\"contrasena\": \"carlos\"\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/registros",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todos los registros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/registros",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete eliminar registro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/registros/5d48cbfa94f8741d2ce1167d",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"registros",
+						"5d48cbfa94f8741d2ce1167d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put actualizar registro",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n    \"usuario\": \"jcastro\",\n    \"contrasena\": \"2345t\"\n}\n"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/registros/5d49b9201e6a34249bb7aa94",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"registros",
+						"5d49b9201e6a34249bb7aa94"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get traer registro por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/registros/5d49b9201e6a34249bb7aa94",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"registros",
+						"5d49b9201e6a34249bb7aa94"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post agregar reseña",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\t\"imagen\":\"url\",\n\t\t\"descripcion\":\"El video es una estrategia digital educativa\",\n\t\t\"metodoligia\":\"Aplicacion en el aula de clase\",\n\t\t\"grado\":\"8\",\n\t\t\"comentario\":\"Buena apreciacion\"\n\t\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/resenas",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"resenas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todas las reseñas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/resenas",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"resenas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete eliminar reseña",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/resenas/5d49bf356bf2522b4b5f38f5",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"resenas",
+						"5d49bf356bf2522b4b5f38f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get traer reseña por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/resenas/5d49bf4f6bf2522b4b5f38f6",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"resenas",
+						"5d49bf4f6bf2522b4b5f38f6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put actualizar reseña",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"descripcion\":\"esta me gusta mas\"\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/resenas/5d49bf4f6bf2522b4b5f38f6",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"resenas",
+						"5d49bf4f6bf2522b4b5f38f6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post agregar area",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"area\":{\n\t\"descripcion\":\"ayuda\",\n\t\"nombre\":\"español\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/areas",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"areas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todas las areas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/areas",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"areas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete eliminar area",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/areas/5d49c274f0b5ed2ea0b5d1dd",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"areas",
+						"5d49c274f0b5ed2ea0b5d1dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get traer area por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/areas/5d49c295f0b5ed2ea0b5d1de",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"areas",
+						"5d49c295f0b5ed2ea0b5d1de"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put actualizar area",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"descripcion\":\"ayuda mas\",\n\t\"nombre\":\"matematicas\"\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/areas/5d49c295f0b5ed2ea0b5d1de",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"areas",
+						"5d49c295f0b5ed2ea0b5d1de"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post agregar recurso",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"recurso\":{\n\t\t\"recurso\":\"Audio libro\",\n\t\t\"descripcion\":\"Esto es para escuchar\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/recursos",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"recursos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get traer recurso por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/recursos/5d49c51ff0b5ed2ea0b5d1e0",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"recursos",
+						"5d49c51ff0b5ed2ea0b5d1e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todos los recursos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/recursos",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"recursos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put actualizar recurso",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"recurso\":\"eso\",\n\t\"descripcion\":\"muy\"\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/recursos/5d49c51ff0b5ed2ea0b5d1e0",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"recursos",
+						"5d49c51ff0b5ed2ea0b5d1e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete eliminar recurso",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/recursos/5d49c506f0b5ed2ea0b5d1df",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"recursos",
+						"5d49c506f0b5ed2ea0b5d1df"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post agregar noticia",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"noticia\":{\n\t\"Novedades\":\"wert\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/noticias",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"noticias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todas las noticias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/noticias",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"noticias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get traer noticia pr id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/noticias/5d49ccf040da2436ffd305be",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"noticias",
+						"5d49ccf040da2436ffd305be"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete eliminar noticia",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/noticias/5d49cc6740da2436ffd305ba",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"noticias",
+						"5d49cc6740da2436ffd305ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put actualizar noticia",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"novedades\":\"sdfsdg\"\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/noticias/5d49ccf040da2436ffd305be",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"noticias",
+						"5d49ccf040da2436ffd305be"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todas las redes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/redes",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"redes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get traer red por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/redes/5d49cfc3136f093aabebee18",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"redes",
+						"5d49cfc3136f093aabebee18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post agragar red",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"red\":{\n\t\t\"url\":\"eru\",\n\t\t\"nombre\":\"twitter\",\n\t\t\"descripcion\":\"ssdfh\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/redes",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"redes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put actualizar red",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\":\"instagram\",\n\t\"descripcion\":\"instagram\"\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/redes/5d49cfc3136f093aabebee18",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"redes",
+						"5d49cfc3136f093aabebee18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete eliminar red",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/redes/5d49cfe8136f093aabebee19",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"redes",
+						"5d49cfe8136f093aabebee19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actializar recurso id area",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Area_id\": [\"5d49fc35e475cb0b166d9d4d\"]\n}"
+				},
+				"url": {
+					"raw": "https://3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c.ws-us0.gitpod.io/recursos/5d49fe515c1d080dd18ab73a",
+					"protocol": "https",
+					"host": [
+						"3000-fa1c93ee-8df0-4d53-93eb-4e1231e4207c",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"recursos",
+						"5d49fe515c1d080dd18ab73a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
